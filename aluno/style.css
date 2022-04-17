@@ -1,0 +1,30 @@
+#menu_navegacao{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#menu_navegacao ul li{
+    margin-left: 20px;
+}
+
+.titulo_site{
+    margin-left:25px;
+}
+
+.titulo_pagina{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+}
+
+main{
+    margin: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.conteudo_principal{
+    margin: 10px;
+    margin-top: 20px;
+}
