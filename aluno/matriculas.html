@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Aluno | Início</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="titulo_site">
+            <a class="navbar-brand" href="#">Colégio Teste</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="menu_navegacao">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Consultas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="inicio.html">Provas</a>
+                    <a class="dropdown-item" href="aulas.html">Aulas</a>
+                    <a class="dropdown-item" href="atividades_extras.html">Atividades Extras</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="matriculas.html">Matriculas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Forum</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="disciplinas.html">Disciplinas</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" >
+                <a class="nav-link" href="#">Sair</a>
+          </li>
+          </ul>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="titulo_pagina">
+            <h1>Minhas Matrículas</h1>
+        </div>
+
+        <div>
+          <a href="" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConteudoDisciplina">Nova Matrícula</a>
+          
+        </div>
+
+        <div class="conteudo_principal">
+            <table class="table table-bordered table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col-1">Disciplina</th>
+                    <th scope="col-6">Professor</th>
+                    <th scope="col-6">Data de início</th>
+                    <th scope="col-1">Data de término</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">12/12/22</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>10/10</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>7.5/10 </td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+        </div>
+    </main>
+
+
+
+
+    <div class="modal fade" id="modalConteudoDisciplina" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Conteúdos da Disciplina</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Preencha o seu nome completo</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Escolha a atividade extra</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Selecione o professor</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+              <div class="form-group-inline">
+                <button type="submit" class="btn btn-primary">Confirmar matrícula</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              
+          </div>
+            
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
