@@ -61,7 +61,7 @@
         </div>
 
         <div class="conteudo_principal">
-            <table class="table table-bordered table-hover">
+            <table class="table table-bordered table-hover" id="tabela_matricula">
                 <thead>
                   <tr>
                     <th scope="col-1">Disciplina</th>
@@ -98,19 +98,15 @@
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Conteúdos da Disciplina</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" id="botao_fechar"
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
             <form>
               <div class="form-group">
-                <label for="exampleFormControlInput1">Preencha o seu nome completo</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1">
-              </div>
-              <div class="form-group">
                 <label for="exampleFormControlSelect1">Escolha a atividade extra</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="atividade_escolhida">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -120,7 +116,7 @@
               </div>
               <div class="form-group">
                 <label for="exampleFormControlSelect1">Selecione o professor</label>
-                <select class="form-control" id="exampleFormControlSelect1">
+                <select class="form-control" id="professor_escolhido">
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
@@ -128,21 +124,22 @@
                   <option>5</option>
                 </select>
               </div>
-              <div class="form-group-inline">
-                <button type="submit" class="btn btn-primary">Confirmar matrícula</button>
-              </div>
+              
             </form>
           </div>
 
+
           <div class="modal-footer">
+              <button onclick="matricular()" class="btn btn-primary">Confirmar matrícula</button>
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
               
           </div>
             
         </div>
       </div>
-    </div>
-
-
+    </div>   
 </body>
+
+<script src="registrar_matricula.js"></script>
+
 </html>
