@@ -24,17 +24,18 @@ function validar_tipo_usuario() {
     var valor_selecionado = document.getElementById('tipo_usuario');
     var tipo_usuario = valor_selecionado.options[valor_selecionado.selectedIndex].value;
 
+
     if(tipo_usuario == 1){
-        window.open('/aluno/inicio.html');
+        location.href = "/aluno/inicio.html";
     }
     else if(tipo_usuario == 2){
-        window.open('/responsavel/provas.html');
+        location.href = "/responsavel/provas.html";
     }
     else if(tipo_usuario == 3){
-        window.open('/professor/aulas.html');
+        location.href = "/professor/aulas.html";
     }
     else if(tipo_usuario == 4){
-        window.open('/secretaria/anoletivo.html');
+        location.href = "/secretaria/anoletivo.html";
     }
     else if(tipo_usuario == 5){
         alert("O usuário do tipo financeiro não possui telas, pois sua aplicação será no back-end");
