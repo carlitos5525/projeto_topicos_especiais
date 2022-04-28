@@ -63,6 +63,9 @@
 
 <main>
 
+    <h1 class="titulo_pagina">Mensagens</h2>
+
+
   <div class="conteudo_principal">
     <div class="page-content page-container" id="page-content">
         <div class="padding">
@@ -71,12 +74,16 @@
                     <div class="card card-bordered">
                         <div class="card-header">
                             <h4 class="card-title"><strong>Chat</strong></h4> 
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected></option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                              </select>
+                            <div class="form-group">
+                                <label for="">Com quem você deseja conversar?</label>
+                                <select onchange="alterar_conversa(this.value)" class="form-control" aria-label="Default select example">
+                                    <option selected></option>
+                                    <option value="1">Prof. Marcela</option>
+                                    <option value="2">Prof. Rodrigo</option>
+                                    <option value="3">Prof. José Augusto</option>
+                                  </select>
+                            </div>
+                            
                         </div>
                         <div class="ps-container ps-theme-default ps-active-y" id="chat-content" style="overflow-y: scroll !important; height:400px !important;">
                             <div class="media media-chat"> <img class="avatar" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
@@ -144,7 +151,7 @@
                         </div>
                         <div class="publisher bt-1 border-light"> <img class="avatar avatar-xs" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="..."> <input class="publisher-input" type="text" placeholder="Write something" id="texto_mensagem">  
 
-                        <button onclick="enviar_mensagem()" id="enviar_mensagem" type="submit">Enviar</button>
+                        <button onclick="enviar_mensagem()" id="enviar_mensagem" type="submit" class="btn btn-success">Enviar</button>
                     
                         </div>
 
