@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Responsável</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="titulo_site">
+          <a class="navbar-brand" href="#">
+            <img src="_img/javascript-736400__480.webp" width="30" height="30" class="d-inline-block align-top" alt="">
+            Colégio JS
+          </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+    
+        <div class="collapse navbar-collapse" id="menu_navegacao">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Matrículas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="ano_letivo.html">Ano letivo</a>
+                    <a class="dropdown-item" href="matriculas.html">Atividades Extras</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Vida Escolar
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="provas.html">Próximas Provas</a>
+                    <a class="dropdown-item" href="notas.html">Notas</a>
+                    <a class="dropdown-item" href="presenca.html">Presença</a>
+                </div>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mensagens.html">Mensagens</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="boletos.html">Boletos</a>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" href="materiais_disciplinas.html">Materiais das disciplinas</a>
+              </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" >
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="identificador_area" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Área do Responsável
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="/login/index.html">Sair</a>
+                  </div>
+                </li>
+          </li>
+          </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="titulo_pagina">
+            <h1>Ano Letivo</h1>
+        </div>
+
+        <div>
+            <a href="" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConteudoDisciplina">Renovar Matrícula</a>
+        </div>
+
+        <div class="conteudo_principal">
+            <table class="table table-bordered table-hover" id="tabela_ano_letivo">
+                <thead>
+                  <tr>
+                    <th scope="col-1">Ano</th>
+                    <th scope="col-6">Aluno</th>
+                    <th scope="col-6">Turno</th>
+                    <th scope="col-6">Série</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2019</th>
+                    <td>Aluno do Responsável</td>
+                    <td>Manhã</td>
+                    <td>5ª série</td>
+                  </tr>
+                  <tr>
+                    <td>2020</th>
+                    <td>Aluno do Responsável</td>
+                    <td>Manhã</td>
+                    <td>6ª série</td>
+                  </tr>
+                  <tr>
+                    <td>2021</th>
+                    <td>Aluno do Responsável</td>
+                    <td>Manhã</td>
+                    <td>7ª série</td>
+                  </tr>
+                </tbody>
+              </table>
+      
+      
+        </div>
+    </main>
+
+    <div class="modal fade" id="modalConteudoDisciplina" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Conteúdos da Disciplina</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" id="botao_fechar"></button>
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <form>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Escolha a Série</label>
+                <select class="form-control" id="serie_escolhida">
+                <option>8ª série</option>
+                <option>7ª série</option>
+                <option>6ª série</option>
+                <option>5ª série</option>
+                <option>4ª série</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Selecione o turno</label>
+                <select class="form-control" id="turno_escolhido">
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+                </select>
+            </div>
+            
+            </form>
+        </div>
+
+
+        <div class="modal-footer">
+            <button onclick="matricular_ano_letivo()" class="btn btn-primary">Confirmar matrícula</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            
+        </div>
+            
+        </div>
+    </div>
+    </div>   
+</body>
+
+<script src="registrar_nova_matricula.js"></script>
+
+</html>
