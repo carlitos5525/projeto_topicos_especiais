@@ -12,86 +12,140 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="titulo_site">
-            <a class="navbar-brand" href="#">Colégio Teste</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-    
-        <div class="collapse navbar-collapse" id="menu_navegacao">
-          <ul class="navbar-nav mr-auto">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="titulo_site">
+      <a class="navbar-brand" href="#">
+        <img src="_img/javascript-736400__480.webp" width="30" height="30" class="d-inline-block align-top" alt="">
+        Colégio JS
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="menu_navegacao">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Agenda
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="inicio.html">Provas</a>
+              <a class="dropdown-item" href="aulas.html">Aulas</a>
+              <a class="dropdown-item" href="atividades_extras.html">Atividades Extras</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="solicitacao_matricula.html">Solicitação de matricula</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="notas.html">Notas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="presenca.html">Presença</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Postar conteudo
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="conteudo_geral.html">Geral</a>
+            <a class="dropdown-item" href="conteudo_individual.html">Individual</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" >
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Agenda
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="inicio.html">Provas</a>
-                  <a class="dropdown-item" href="aulas.html">Aulas</a>
-                  <a class="dropdown-item" href="atividades_extras.html">Atividades Extras</a>
-                </div>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Solicitação de matricula</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Postar conteudo
+              <a class="nav-link dropdown-toggle" href="#" id="identificador_area" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Área do Professor
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="conteudo_geral.html">Geral</a>
-                <a class="dropdown-item" href="conteudo_individual.html">Individual</a>
+                  <a class="dropdown-item" href="/login/index.html">Sair</a>
               </div>
             </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item" >
-                <a class="nav-link" href="#">Sair</a>
-          </li>
-          </ul>
-        </div>
-    </nav>
+      </li>
+      </ul>
+    </div>
+</nav>
 
     <main>
-        <div class="titulo_pagina">
-            <h1>Postar conteúdo por aluno</h1>
-        </div>
-
-        <div class="conteudo_principal">
-            <table class="table table-bordered table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col-1">Aluno</th>
-                    <th scope="col-6">Material</th>
-                  </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                      <th scope="row">
-                       João
-                      </th>
-                      <td>
-                        <input type="text" ></input>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">
-                       Zé
-                      </th>
-                      <td>
-                        <input type="text" ></input>
-                      </td>
-                    </tr>
-                  </tbody>
-              </table>
-
-
-        </div>
-    </main>
-
-    <footer>
+      <div class="titulo_pagina">
+          <h1>Materiais Individuais</h1>
+      </div>
+    
+      <div>
+        <a href="" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConteudoDisciplina">Novo Material</a>
         
-    </footer>
-</body>
-</html>
+      </div>
+    
+      <div class="conteudo_principal">
+          <table class="table table-bordered table-hover" id="tabela_matricula">
+              <thead>
+                <tr>
+                  <th scope="col-1">Aluno</th>
+                  <th scope="col-6">Nome do Material</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">12/12/22</th>
+                  <td>Mark</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                </tr>
+              </tbody>
+            </table>
+    
+    
+      </div>
+    </main>
+    
+    
+    
+    
+    <div class="modal fade" id="modalConteudoDisciplina" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Conteúdos da Disciplina</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" id="botao_fechar"></button>
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Selecione o aluno</label>
+              <select class="form-control" id="aluno_escolhido">
+                <option>Turma 1</option>
+                <option>Turma 2</option>
+                <option>Turma 3</option>
+                <option>Turma 4</option>
+                <option>Turma 5</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Informe o nome do material</label>
+              <input type="text" name="" id="nome_material">
+            </div>
+          </form>
+        </div>
+    
+    
+        <div class="modal-footer">
+            <button onclick="registrar()" class="btn btn-primary">Confirmar</button>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            
+        </div>
+          
+      </div>
+    </div>
+    </div>   
+    </body>
+    
+    <script src="_js/registrar_mat_individual.js"></script>
+    
+    </html>

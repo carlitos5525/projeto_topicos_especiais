@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Área do professor</title>
+    <title>Área do Professor | Início</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="titulo_site">
@@ -69,67 +68,97 @@
           </ul>
         </div>
     </nav>
+<main>
+  <div class="titulo_pagina">
+      <h1>Notas</h1>
+  </div>
 
-    <main>
-        <div class="titulo_pagina">
-            <h1>Aprovação de Matrícula</h1>
-        </div>
+  <div>
+    <a href="" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConteudoDisciplina">Adicionar nota</a>
+    
+  </div>
 
-        <div class="conteudo_principal">
-            <table class="table table-bordered table-hover" id="tabela_matricula">
-                <thead>
-                  <tr>
-                    <th scope="col-1">Aluno</th>
-                    <th scope="col-6">Turno</th>
-                    <th scope="col-6">Série</th>
-                    <th scope="col-1">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr id="row_1" onclick="abrir_modal(this.id)">
-                      <td>12/12/22</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td id="status_1">10/10</td>
-                  </tr>
-                  <tr id="row_2" onclick="abrir_modal(this.id)">
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>7.5/10 </td>
-                  </tr>
-                </tbody>
-              </table>
+  <div class="conteudo_principal">
+      <table class="table table-bordered table-hover" id="tabela_matricula">
+          <thead>
+            <tr>
+              <th scope="col-1">Aluno</th>
+              <th scope="col-6">Disciplina</th>
+              <th scope="col-6">Data da Prova</th>
+              <th scope="col-6">Nota</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">12/12/22</th>
+              <td>Mark</td>
+              <td>Mark</td>
+              <td>Mark</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Mark</td>
+              <td>Mark</td>
+            </tr>
+          </tbody>
+        </table>
 
 
-        </div>
-    </main>
+  </div>
+</main>
 
-    <div class="modal fade" id="modalAprovacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Deseja aprovar a matrícula?</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" id="botao_fechar"></button>
-              <span aria-hidden="true">&times;</span>
-            </button>
+
+
+
+<div class="modal fade" id="modalConteudoDisciplina" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Conteúdos da Disciplina</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar" id="botao_fechar"></button>
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Selecione o aluno</label>
+            <select class="form-control" id="aluno_escolhido">
+              <option>Aluno 1</option>
+              <option>Aluno 2</option>
+              <option>Aluno 3</option>
+              <option>Aluno 4</option>
+              <option>Aluno 5</option>
+            </select>
           </div>
-          <div class="modal-body">
-          
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Informe a disciplina</label>
+            <input type="text" name="" id="disciplina">
           </div>
-
-
-          <div class="modal-footer">
-              <button id="confirmar" class="btn btn-primary">Confirmar matrícula</button>
-              <button id="recusar"  class="btn btn-secondary">Recusar matrícula</button>
-              
-          </div>
-            
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Informe a data</label>
+          <input type="date" name="" id="data">
         </div>
-      </div>
-    </div>   
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Informe a nota</label>
+          <input type="text" name="" id="aluno">
+        </div>
+      </form>
+    </div>
+
+
+    <div class="modal-footer">
+        <button onclick="registrar()" class="btn btn-primary">Confirmar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        
+    </div>
+      
+  </div>
+</div>
+</div>   
 </body>
 
-<script src="_js/aprovacao_matricula.js"></script>
+<script src="_js/registrar_nota.js"></script>
 
 </html>

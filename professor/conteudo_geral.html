@@ -14,7 +14,10 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="titulo_site">
-            <a class="navbar-brand" href="#">Colégio Teste</a>
+          <a class="navbar-brand" href="#">
+            <img src="_img/javascript-736400__480.webp" width="30" height="30" class="d-inline-block align-top" alt="">
+            Colégio JS
+          </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +36,13 @@
                 </div>
               </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Solicitação de matricula</a>
+              <a class="nav-link" href="solicitacao_matricula.html">Solicitação de matricula</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="notas.html">Notas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="presenca.html">Presença</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -47,47 +56,186 @@
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item" >
-                <a class="nav-link" href="#">Sair</a>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="identificador_area" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Área do Professor
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="/login/index.html">Sair</a>
+                  </div>
+                </li>
           </li>
           </ul>
         </div>
     </nav>
-
     <main>
-        <div class="titulo_pagina">
-            <h1>Postar conteúdo</h1>
-        </div>
+      <div class="titulo_pagina">
+          <h1>Minhas Disciplinas</h1>
+      </div>
 
-        <div class="conteudo_principal">
-            <table class="table table-bordered table-hover">
-                <thead>
-                  <tr>
-                    <th scope="col-1">Aula</th>
-                    <th scope="col-6">Material</th>
-                  </tr>
-                </thead>
-                <tbody>
+
+      <div class="linha_disciplinas" >
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/matematica.png" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>Matemática</p>
+                  </div>
+              </div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/portugues.jpg" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>Língua Portuguesa</p>
+                  </div>
+              </div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/historia.jpg" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>História</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      <div class="linha_disciplinas" >
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/geografia.jpg" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>Geografia</p>
+                  </div>
+              </div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/ciencia.webp" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>Ciências</p>
+                  </div>
+              </div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/artes.jpg" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>Artes</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      <div class="linha_disciplinas" >
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/ingles.jpg" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>Inglês</p>
+                  </div>
+              </div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/redacao.jpg" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>Redação</p>
+                  </div>
+              </div>
+          </a>
+          <a href="" data-toggle="modal" data-target="#modalConteudoDisciplina">
+              <div class="disciplina">
+                  <div class="disciplina_img"> 
+                      <img src="_img/filosofia.jpg" alt="">
+                  </div>
+                  <div class="titulo_disciplina">
+                      <p>Filosofia</p>
+                  </div>
+              </div>
+          </a>
+      </div>
+
+      
+  </main>
+
+
+  <!-- modal para exibir conteúdos das disciplinas -->
+
+  <div class="modal fade" id="modalConteudoDisciplina" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Conteúdos da Disciplina</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div>
+              <button class="btn btn-success">Enviar novo Arquivo</button>
+            </div>
+              <table class="table">
+                  <thead>
                     <tr>
-                      <th scope="row">22/11/2015</th>
-                      <td>
-                        <input type="text" ></input>
-                      </td>
+                      <th scope="col">Nome do Arquivo</th>
+                      <th scope="col">Data de Envio</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Livro X</td>
+                      <td>19/12/2020</td>
+                      <td><button class="btn btn-primary">Download <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                          <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+                        </svg></button></td>
                     </tr>
                     <tr>
-                      <th scope="row">23/11/2015</th>
-                      <td>
-                        <input type="text" ></input>
-                      </td>
+                      <td>Livro Y</td>
+                      <td>20/12/2020</td>
+                      <td><button class="btn btn-primary">Download <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                          <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+                        </svg></button></td>
+                    </tr>
+                    <tr>
+                      <td>Livro W</td>
+                      <td>21/12/2020</td>
+                      <td><button class="btn btn-primary">Download <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down-fill" viewBox="0 0 16 16">
+                          <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-1 4v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 11.293V7.5a.5.5 0 0 1 1 0z"/>
+                        </svg></button></td>
                     </tr>
                   </tbody>
-              </table>
+                </table>
+          </div>
 
-
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+              
+          </div>
+            
         </div>
-    </main>
+      </div>
+    </div>
+  
 
-    <footer>
-        
-    </footer>
+
 </body>
 </html>
