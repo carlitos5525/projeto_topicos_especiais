@@ -72,3 +72,12 @@ main{
     color: white;
 }
 
+.titulo_mensagens{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#identificador_area{
+    font-weight: bold;
+}
