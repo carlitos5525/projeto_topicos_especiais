@@ -28,6 +28,6 @@ function inserirLinhaTabela(atividade, data, aluno) {
     document.getElementById("botao_fechar").click();
     
 
-    alert("Prova agendada com sucesso!");
+    alert("Atividade extra agendada com sucesso!");
     
 }

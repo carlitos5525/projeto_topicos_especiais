@@ -32,6 +32,6 @@ function inserirLinhaTabela(disciplina, data, turma, conteudo) {
     document.getElementById("botao_fechar").click();
     
 
-    alert("Prova agendada com sucesso!");
+    alert("Aula agendada com sucesso!");
     
 }

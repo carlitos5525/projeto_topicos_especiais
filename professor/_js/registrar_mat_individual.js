@@ -25,6 +25,6 @@ function inserirLinhaTabela(aluno, nome_material) {
     document.getElementById("botao_fechar").click();
     
 
-    alert("Prova agendada com sucesso!");
+    alert("Material enviado com sucesso!");
     
 }
