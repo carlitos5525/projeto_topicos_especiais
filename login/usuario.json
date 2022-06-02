@@ -1,0 +1,27 @@
+{"usuarios": [
+ {
+  "login": "Deven14@gmail.com",
+  "senha": "senha 1",
+  "tipo_usuario": 1,
+  "id": "1"
+ },
+ {
+  "login": "Gino.Johnson58@hotmail.com",
+  "senha": "senha 2",
+  "tipo_usuario": 2,
+  "id": "2"
+ },
+ {
+  "login": "Delpha65@hotmail.com",
+  "senha": "senha 3",
+  "tipo_usuario": 3,
+  "id": "3"
+ },
+ {
+  "login": "Carmelo_Vandervort@hotmail.com",
+  "senha": "senha 4",
+  "tipo_usuario": 4,
+  "id": "4"
+ }
+]
+}
