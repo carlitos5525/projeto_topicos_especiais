@@ -17,3 +17,29 @@ function alterar_conversa(usuario){
     div_chat = document.getElementById("chat-content");
     div_chat.innerHTML = '';
 }
+
+function base_dados(){
+    var requestURL = '/base_dados/mensagens.json';
+
+    var request = new XMLHttpRequest();
+
+    request.open('GET', requestURL);
+
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function(){
+        var mensagens = request.response;
+        populate_mensagens(mensagens);
+    }
+}
+
+function populate_mensagens(jsonOBJ){
+    var mensagens = jsonOBJ['mensagens'];
+
+    div_chat = document.getElementById("chat-content");
+    for(index in mensagens){
+        mensagem = '<div class="media media-chat media-chat-reverse">' + '<div class="media-body">' +'<p>' + mensagens[index].texto + '</p>' + '</div>' + '</div>';
+        div_chat.insertAdjacentHTML('beforeend', mensagem);
+    }
+}
