@@ -1,7 +1,7 @@
 function enviar_mensagem(){
     elemento_mensagem = document.getElementById("texto_mensagem");
     texto_mensagem = elemento_mensagem.value;
-
+    
     //elemento da mensagem do chat
     div_chat = document.getElementById("chat-content");
     mensagem = '<div class="media media-chat media-chat-reverse">' + '<div class="media-body">' +'<p>' + texto_mensagem + '</p>' + '</div>' + '</div>';
@@ -10,7 +10,14 @@ function enviar_mensagem(){
     div_chat.insertAdjacentHTML('beforeend', mensagem);
 
     //zerando a caixa de texto
-    document.getElementById('texto_mensagem').value='';
+    document.getElementById('texto_mensagem').value=''; 
+}
+
+function Mensagem(id, rementente_id, conversa_id, texto){
+    this.id = id;
+    this.rementente_id = rementente_id;
+    this.conversa_id = conversa_id;
+    this.texto = texto;c
 }
 
 function alterar_conversa(usuario){

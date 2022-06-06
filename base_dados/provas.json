@@ -1,0 +1,59 @@
+{"provas" : [
+ {
+  "data": "2022-06-06T01:53:34.817Z",
+  "nota": 48,
+  "professorID": 27,
+  "alunoID": 27,
+  "id": "1",
+  "disciplinaId": "1"
+ },
+ {
+  "data": "2022-06-06T01:02:24.873Z",
+  "nota": 40,
+  "professorID": 4,
+  "alunoID": 41,
+  "id": "2",
+  "disciplinaId": "2"
+ },
+ {
+  "data": "2022-06-06T15:00:26.306Z",
+  "nota": 43,
+  "professorID": 80,
+  "alunoID": 62,
+  "id": "3",
+  "disciplinaId": "3"
+ },
+ {
+  "data": "2022-06-05T18:26:26.889Z",
+  "nota": 31,
+  "professorID": 38,
+  "alunoID": 51,
+  "id": "4",
+  "disciplinaId": "4"
+ },
+ {
+  "data": "2022-06-06T02:11:44.727Z",
+  "nota": 71,
+  "professorID": 21,
+  "alunoID": 11,
+  "id": "5",
+  "disciplinaId": "1"
+ },
+ {
+  "data": "2022-06-06T08:47:19.306Z",
+  "nota": 69,
+  "professorID": 29,
+  "alunoID": 95,
+  "id": "6",
+  "disciplinaId": "2"
+ },
+ {
+  "data": "2022-06-06T03:42:25.260Z",
+  "nota": 97,
+  "professorID": 22,
+  "alunoID": 45,
+  "id": "7",
+  "disciplinaId": "3"
+ }
+]
+}
