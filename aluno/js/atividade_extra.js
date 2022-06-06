@@ -17,13 +17,26 @@ function base_dados(){
 function populate_atividades(jsonOBJ){
     var atividades = jsonOBJ['atividades'];
 
-    t_body = document.getElementById('t_body');
+    //pegando o id do usuario logado
+    var id_usuario_logado = localStorage.getItem("id_usuario");
+
+    var atividades_do_usuario = [];
+    
+    //filtrando apenas pelas provas do usuario logado
     for(index in atividades){
-        atividade = "<tr>" + "<td>" + atividades[index].data + " </td>" + 
-        "<td>" + atividades[index].nome_atividade + " </td>" + 
-        "<td>" + atividades[index].professor_id + " </td>";
+        if(atividades[index].aluno_id == id_usuario_logado){
+            atividades_do_usuario.push(atividades[index]);
+        }
+    }
+
+    t_body = document.getElementById('t_body');
+
+    for(index in atividades_do_usuario){
+        atividade = "<tr>" + "<td>" + atividades_do_usuario[index].data + " </td>" + 
+        "<td>" + atividades_do_usuario[index].nome_atividade + " </td>" + 
+        "<td>" + atividades_do_usuario[index].professor_id + " </td>";
         
-        if(atividades[index].presenca == true){
+        if(atividades_do_usuario[index].presenca == true){
             atividade = atividade + "<td>" + "Sim" + " </td>" + "</tr>";
         }
         else{

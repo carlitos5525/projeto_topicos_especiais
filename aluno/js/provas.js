@@ -17,12 +17,24 @@ function base_dados(){
 function populate_provas(jsonOBJ){
     var provas = jsonOBJ['provas'];
 
-    t_body = document.getElementById('t_body');
+    //pegando o id do usuario logado
+    var id_usuario_logado = localStorage.getItem("id_usuario");
+
+    var provas_do_usuario = [];
+    
+    //filtrando apenas pelas provas do usuario logado
     for(index in provas){
-        prova = "<tr>" + "<td>" + provas[index].data + " </td>" + 
-        "<td>" + provas[index].disciplinaId + " </td>" + 
-        "<td>" + provas[index].professorID + " </td>" + 
-        "<td>" + provas[index].nota + " </td>" + "</tr>";
+        if(provas[index].alunoID == id_usuario_logado){
+            provas_do_usuario.push(provas[index]);
+        }
+    }
+
+    t_body = document.getElementById('t_body');
+    for(index in provas_do_usuario){
+        prova = "<tr>" + "<td>" + provas_do_usuario[index].data + " </td>" + 
+        "<td>" + provas_do_usuario[index].disciplinaId + " </td>" + 
+        "<td>" + provas_do_usuario[index].professorID + " </td>" + 
+        "<td>" + provas_do_usuario[index].nota + " </td>" + "</tr>";
         t_body.insertAdjacentHTML('beforeend', prova);
     }
 }

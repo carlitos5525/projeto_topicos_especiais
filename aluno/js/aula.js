@@ -17,13 +17,26 @@ function base_dados(){
 function populate_aulas(jsonOBJ){
     var aulas = jsonOBJ['aulas'];
 
-    t_body = document.getElementById('t_body');
+    //pegando o id do usuario logado
+    var id_usuario_logado = localStorage.getItem("id_usuario");
+
+    var aulas_do_usuario = [];
+    
+    //filtrando apenas pelas provas do usuario logado
     for(index in aulas){
-        aula = "<tr>" + "<td>" + aulas[index].data + " </td>" + 
-        "<td>" + aulas[index].disciplina_id + " </td>" + 
-        "<td>" + aulas[index].professor_id + " </td>";
+        if(aulas[index].aluno_id == id_usuario_logado){
+            aulas_do_usuario.push(aulas[index]);
+        }
+    }
+
+    t_body = document.getElementById('t_body');
+
+    for(index in aulas_do_usuario){
+        aula = "<tr>" + "<td>" + aulas_do_usuario[index].data + " </td>" + 
+        "<td>" + aulas_do_usuario[index].disciplina_id + " </td>" + 
+        "<td>" + aulas_do_usuario[index].professor_id + " </td>";
         
-        if(aulas[index].presenca == true){
+        if(aulas_do_usuario[index].presenca == true){
             aula = aula + "<td>" + "Sim" + " </td>" + "</tr>";
         }
         else{

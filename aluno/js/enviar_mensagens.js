@@ -39,6 +39,7 @@ function base_dados(){
         var mensagens = request.response;
         populate_mensagens(mensagens);
     }
+
 }
 
 function populate_mensagens(jsonOBJ){
