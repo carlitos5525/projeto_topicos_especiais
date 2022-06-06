@@ -1,0 +1,35 @@
+{ "atividades": [
+ {
+  "data": "2022-06-06T22:32:25.801Z",
+  "nome_atividade": "nome_atividade 1",
+  "presenca": false,
+  "professor_id": 97,
+  "aluno_id": 8,
+  "id": "1"
+ },
+ {
+  "data": "2022-06-07T06:58:48.379Z",
+  "nome_atividade": "nome_atividade 2",
+  "presenca": false,
+  "professor_id": 84,
+  "aluno_id": 21,
+  "id": "2"
+ },
+ {
+  "data": "2022-06-07T00:35:52.186Z",
+  "nome_atividade": "nome_atividade 3",
+  "presenca": false,
+  "professor_id": 17,
+  "aluno_id": 85,
+  "id": "3"
+ },
+ {
+  "data": "2022-06-06T21:09:12.105Z",
+  "nome_atividade": "nome_atividade 4",
+  "presenca": true,
+  "professor_id": 1,
+  "aluno_id": 42,
+  "id": "4"
+ }
+]
+}
