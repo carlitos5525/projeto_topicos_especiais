@@ -41,6 +41,10 @@ function validar_tipo_usuario(usuarios, index) {
     //conferindo se o tipo de usuário que foi preenchido é o tipo que está salvo na nossa base de dados e
     //depois redirecinando o usuário para a sua área correta
     if(tipo_usuario == usuarios[index].tipo_usuario){
+
+        //criando uma sessão do usuário e salvando na localStorage
+        localStorage.setItem("id_usuario", usuarios[index].id);
+
         if(tipo_usuario == 1){
             location.href = "/aluno/inicio.html";
         }
