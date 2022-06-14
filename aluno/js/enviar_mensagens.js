@@ -13,13 +13,6 @@ function enviar_mensagem(){
     document.getElementById('texto_mensagem').value=''; 
 }
 
-function Mensagem(id, rementente_id, conversa_id, texto){
-    this.id = id;
-    this.rementente_id = rementente_id;
-    this.conversa_id = conversa_id;
-    this.texto = texto;c
-}
-
 function alterar_conversa(usuario){
     div_chat = document.getElementById("chat-content");
     div_chat.innerHTML = '';
