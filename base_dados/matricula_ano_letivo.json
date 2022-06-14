@@ -1,0 +1,48 @@
+{ "matriculas_ano_letivo" : [
+ {
+  "aluno_id": 1,
+  "aluno_nome": "Aluno 1",
+  "turma": 90,
+  "turno": "tarde",
+  "ano_letivo": "ano_letivo 1",
+  "ano": 2019,
+  "id": "1"
+ },
+ {
+  "aluno_id": 9,
+  "aluno_nome": "Aluno 1",
+  "turma": 61,
+  "turno": "tarde",
+  "ano_letivo": "ano_letivo 2",
+  "ano": 2019,
+  "id": "2"
+ },
+ {
+  "aluno_id": 18,
+  "aluno_nome": "Aluno 1",
+  "turma": 58,
+  "turno": "tarde",
+  "ano_letivo": "ano_letivo 3",
+  "ano": 2019,
+  "id": "3"
+ },
+ {
+  "aluno_id": 86,
+  "aluno_nome": "Aluno 1",
+  "turma": 72,
+  "turno": "tarde",
+  "ano_letivo": "ano_letivo 4",
+  "ano": 2019,
+  "id": "4"
+ },
+ {
+  "aluno_id": 54,
+  "aluno_nome": "Aluno 1",
+  "turma": 42,
+  "turno": "tarde",
+  "ano_letivo": "ano_letivo 5",
+  "ano": 2019,
+  "id": "5"
+ }
+]
+}

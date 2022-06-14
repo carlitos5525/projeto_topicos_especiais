@@ -10,9 +10,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="js/matricula_ano_letivo.js"></script>
 </head>
 
-<body>
+<body onload="base_dados()">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="titulo_site">
           <a class="navbar-brand" href="#">
@@ -85,29 +86,13 @@
                   <tr>
                     <th scope="col-1">Ano</th>
                     <th scope="col-6">Aluno</th>
+                    <th scope="col-6">Turma</th>
                     <th scope="col-6">Turno</th>
                     <th scope="col-6">Série</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>2019</th>
-                    <td>Aluno do Responsável</td>
-                    <td>Manhã</td>
-                    <td>5ª série</td>
-                  </tr>
-                  <tr>
-                    <td>2020</th>
-                    <td>Aluno do Responsável</td>
-                    <td>Manhã</td>
-                    <td>6ª série</td>
-                  </tr>
-                  <tr>
-                    <td>2021</th>
-                    <td>Aluno do Responsável</td>
-                    <td>Manhã</td>
-                    <td>7ª série</td>
-                  </tr>
+                <tbody id="t_body">
+                  
                 </tbody>
               </table>
       
