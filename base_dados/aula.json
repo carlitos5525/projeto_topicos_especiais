@@ -2,32 +2,44 @@
  {
   "data": "2022-06-06T21:02:45.219Z",
   "disciplina_id": 78,
+  "disciplina_nome": "Matemática",
   "professor_id": 81,
   "aluno_id": 9,
+  "aluno_nome": "Aluno 1",
+  "turma": 1,
   "presenca": false,
   "id": "1"
  },
  {
   "data": "2022-06-06T17:52:11.193Z",
   "disciplina_id": 77,
+  "disciplina_nome": "Matemática",
   "professor_id": 12,
   "aluno_id": 38,
+  "aluno_nome": "Aluno 1",
+  "turma": 1,
   "presenca": false,
   "id": "2"
  },
  {
   "data": "2022-06-07T13:40:18.255Z",
   "disciplina_id": 67,
+  "disciplina_nome": "Matemática",
   "professor_id": 36,
   "aluno_id": 1,
+  "aluno_nome": "Aluno 1",
+  "turma": 1,
   "presenca": false,
   "id": "3"
  },
  {
   "data": "2022-06-07T10:55:05.865Z",
   "disciplina_id": 21,
+  "disciplina_nome": "Matemática",
   "professor_id": 39,
   "aluno_id": 11,
+  "aluno_nome": "Aluno 1",
+  "turma": 1,
   "presenca": false,
   "id": "4"
  }
