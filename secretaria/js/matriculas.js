@@ -1,6 +1,5 @@
 function base_dados(turma_id){
 
-
     localStorage.setItem("turma_id", turma_id);
 
     var requestURL = '/base_dados/matricula_ano_letivo.json';
@@ -35,6 +34,11 @@ function populate_matriculas_ano_letivo(jsonOBJ){
 
 
     t_body = document.getElementById('t_body');
+
+    //zerando a tabela
+    t_body.innerHTML = '';
+
+    //preenchendo a tabela com a turma correta
     for(index in matriculas_da_turma){
         matricula = "<tr>" + "<td>" + matriculas_da_turma[index].turma + " </td>" +
         "<td>" + matriculas_da_turma[index].aluno_nome + " </td>" + 
