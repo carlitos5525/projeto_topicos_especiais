@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="js/matriculas.js"></script>
 </head>
 <body>
     
@@ -68,29 +69,28 @@
         <div class="titulo_pagina">
             <h1>Matriculas</h1>
         </div>
+        <div class="form-group">
+          <label for="">Selecione a turma</label>
+          <select onchange="base_dados(this.value)" class="form-control" aria-label="Default select example">
+              <option value="0"></option>
+              <option value="1">Turma 01</option>
+              <option value="2">Turma 02</option>
+              <option value="3">Turma 03</option>
+              </select>
+      </div>
         <div class="conteudo_principal">
             <table class="table table-bordered table-hover">
                 <thead>
                   <tr>
+                    <th>Turma</th>
                     <th scope="col-1">Aluno</th>
+                    <th scope="col-6">Turno</th>
                     <th>Série</th>
-                    <th scope="col-6">Atividades Extras</th>
-                    <th>Ano letivo</th>
+                    <th>Ano da matrícula</th>
                   </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                      <th scope="row">Aloy</th>
-                      <td>7 série</td>
-                      <td>Aula de Arco</td>
-                      <td>2021</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Atreus</th>
-                      <td>8 série</td>
-                      <td>Aula de Arco</td>
-                      <td>2022</td>
-                    </tr>
+                <tbody id="t_body">
+                    
                   </tbody>
               </table>
 
