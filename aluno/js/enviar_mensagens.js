@@ -13,10 +13,6 @@ function enviar_mensagem(){
     document.getElementById('texto_mensagem').value=''; 
 }
 
-function alterar_conversa(usuario){
-    div_chat = document.getElementById("chat-content");
-    div_chat.innerHTML = '';
-}
 
 function base_dados(id_conversa){
     var requestURL = '/base_dados/mensagens.json';
@@ -55,6 +51,8 @@ function populate_mensagens(jsonOBJ){
 
 
     div_chat = document.getElementById("chat-content");
+
+    div_chat.innerHTML = '';
     for(index in mensagens_da_conversa){
         if(mensagens_da_conversa[index].remetente_id == id_usuario_logado){
             mensagem = '<div class="media media-chat media-chat-reverse">' + '<div class="media-body">' +'<p>' + mensagens_da_conversa[index].texto + '</p>' + '</div>' + '</div>';
