@@ -6,6 +6,7 @@
   "turno": "tarde",
   "ano_letivo": "ano_letivo 1",
   "ano": 2019,
+  "status": true,
   "id": "1"
  },
  {
@@ -15,6 +16,7 @@
   "turno": "tarde",
   "ano_letivo": "ano_letivo 2",
   "ano": 2019,
+  "status": false,
   "id": "2"
  },
  {
@@ -24,6 +26,7 @@
   "turno": "tarde",
   "ano_letivo": "ano_letivo 3",
   "ano": 2019,
+  "status": false,
   "id": "3"
  },
  {
@@ -33,6 +36,7 @@
   "turno": "tarde",
   "ano_letivo": "ano_letivo 4",
   "ano": 2019,
+  "status": false,
   "id": "4"
  },
  {
@@ -42,6 +46,7 @@
   "turno": "tarde",
   "ano_letivo": "ano_letivo 5",
   "ano": 2019,
+  "status": false,
   "id": "5"
  }
 ]

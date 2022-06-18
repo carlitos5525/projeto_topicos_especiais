@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="base_dados()">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="titulo_site">
           <a class="navbar-brand" href="#">
@@ -85,19 +85,8 @@
                     <th scope="col-1">Status</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr id="row_1" onclick="abrir_modal(this.id)">
-                      <td>Rodrigo</th>
-                      <td>Manhã</td>
-                      <td>8ª série</td>
-                      <td></td>
-                  </tr>
-                  <tr id="row_2" onclick="abrir_modal(this.id)">
-                    <td>Laís</th>
-                      <td>Manhã</td>
-                      <td>7ª série</td>
-                      <td></td>
-                  </tr>
+                <tbody id="t_body">
+                  
                 </tbody>
               </table>
 
