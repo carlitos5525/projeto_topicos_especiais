@@ -13,62 +13,65 @@
     <script src="_js/notas.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="titulo_site">
-          <a class="navbar-brand" href="#">
-            <img src="_img/javascript-736400__480.webp" width="30" height="30" class="d-inline-block align-top" alt="">
-            Colégio JS
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="titulo_site">
+      <a class="navbar-brand" href="#">
+        <img src="_img/javascript-736400__480.webp" width="30" height="30" class="d-inline-block align-top" alt="">
+        Colégio JS
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="menu_navegacao">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Agenda
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="inicio.html">Provas</a>
+              <a class="dropdown-item" href="aulas.html">Aulas</a>
+              <a class="dropdown-item" href="atividades_extras.html">Atividades Extras</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="solicitacao_matricula.html">Solicitação de matricula</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="notas.html">Notas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="presenca.html">Presença</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="mensagens.html">Mensagens</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Postar conteudo
           </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-    
-        <div class="collapse navbar-collapse" id="menu_navegacao">
-          <ul class="navbar-nav mr-auto">
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="conteudo_geral.html">Geral</a>
+            <a class="dropdown-item" href="conteudo_individual.html">Individual</a>
+          </div>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item" >
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Agenda
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="inicio.html">Provas</a>
-                  <a class="dropdown-item" href="aulas.html">Aulas</a>
-                  <a class="dropdown-item" href="atividades_extras.html">Atividades Extras</a>
-                </div>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="solicitacao_matricula.html">Solicitação de matricula</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="notas.html">Notas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="presenca.html">Presença</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Postar conteudo
+              <a class="nav-link dropdown-toggle" href="#" id="identificador_area" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Área do Professor
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="conteudo_geral.html">Geral</a>
-                <a class="dropdown-item" href="conteudo_individual.html">Individual</a>
+                  <a class="dropdown-item" href="/login/index.html">Sair</a>
               </div>
             </li>
-          </ul>
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item" >
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="identificador_area" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Área do Professor
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <a class="dropdown-item" href="/login/index.html">Sair</a>
-                  </div>
-                </li>
-          </li>
-          </ul>
-        </div>
-    </nav>
+      </li>
+      </ul>
+    </div>
+</nav>
 <main>
   <div class="titulo_pagina">
       <h1>Notas</h1>
