@@ -13,7 +13,53 @@ function enviar_mensagem(){
     document.getElementById('texto_mensagem').value='';
 }
 
-function alterar_conversa(usuario){
+function base_dados(id_conversa){
+    var requestURL = '/base_dados/mensagens.json';
+
+    localStorage.setItem("id_conversa", id_conversa);
+
+    var request = new XMLHttpRequest();
+
+    request.open('GET', requestURL);
+
+    request.responseType = 'json';
+    request.send();
+
+    request.onload = function(){
+        var mensagens = request.response;
+        populate_mensagens(mensagens);
+    }
+
+}
+
+function populate_mensagens(jsonOBJ){
+    var mensagens = jsonOBJ['mensagens'];
+
+    id_usuario_logado = localStorage.getItem("id_usuario");
+
+    id_conversa = localStorage.getItem("id_conversa");
+
+    var mensagens_da_conversa = [];
+
+    //filtrando pelas mensagens da conversa selecionada
+    for(index in mensagens){
+        if(mensagens[index].ConversaId == id_conversa){
+            mensagens_da_conversa.push(mensagens[index]);
+        }
+    }
+
+
     div_chat = document.getElementById("chat-content");
+
     div_chat.innerHTML = '';
+    for(index in mensagens_da_conversa){
+        if(mensagens_da_conversa[index].remetente_id == id_usuario_logado){
+            mensagem = '<div class="media media-chat media-chat-reverse">' + '<div class="media-body">' +'<p>' + mensagens_da_conversa[index].texto + '</p>' + '</div>' + '</div>';
+        }
+        else{
+            mensagem = '<div class="media media-chat media-chat">' + '<div class="media-body">' +'<p>' + mensagens_da_conversa[index].texto + '</p>' + '</div>' + '</div>';
+        }
+        
+        div_chat.insertAdjacentHTML('beforeend', mensagem);
+    }
 }
