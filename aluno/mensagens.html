@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="mensagens.css">
 </head>
 
-<body onload="base_dados()">
+<body">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="titulo_site">
           <a class="navbar-brand" href="#">
@@ -76,7 +76,8 @@
                             <h4 class="card-title"><strong>Chat</strong></h4> 
                             <div class="form-group">
                                 <label for="">Com quem você deseja conversar?</label>
-                                <select onchange="alterar_conversa(this.value)" class="form-control" aria-label="Default select example">
+                                <select onchange="base_dados(this.value)" class="form-control" aria-label="Default select example">
+                                    <option value="0"></option>
                                     <option value="1">Prof. Marcela</option>
                                     <option value="2">Prof. Rodrigo</option>
                                     <option value="3">Prof. José Augusto</option>
