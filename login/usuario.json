@@ -6,20 +6,20 @@
   "id": "1"
  },
  {
-  "login": "Gino.Johnson58@hotmail.com",
-  "senha": "senha 2",
+  "login": "responsavel@gmail.com",
+  "senha": "senha",
   "tipo_usuario": 2,
   "id": "2"
  },
  {
-  "login": "Delpha65@hotmail.com",
-  "senha": "senha 3",
+  "login": "professor@gmail.com",
+  "senha": "senha",
   "tipo_usuario": 3,
   "id": "3"
  },
  {
-  "login": "Carmelo_Vandervort@hotmail.com",
-  "senha": "senha 4",
+  "login": "secretaria@gmail.com",
+  "senha": "senha",
   "tipo_usuario": 4,
   "id": "4"
  }

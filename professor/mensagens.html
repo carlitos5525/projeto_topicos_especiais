@@ -87,7 +87,8 @@
                             <h4 class="card-title"><strong>Chat</strong></h4> 
                             <div class="form-group">
                                 <label for="">Com quem você deseja conversar?</label>
-                                <select onchange="alterar_conversa(this.value)" class="form-control" aria-label="Default select example">
+                                <select onchange="base_dados(this.value)" class="form-control" aria-label="Default select example">
+                                    <option value="0"></option>
                                     <option value="1">Marcela</option>
                                     <option value="2">Rodrigo</option>
                                     <option value="3">José Augusto</option>
@@ -96,37 +97,7 @@
                             
                         </div>
                         <div class="ps-container ps-theme-default ps-active-y" id="chat-content" style="overflow-y: scroll !important; height:400px !important;">
-                            <div class="media media-chat"> <img class="avatar" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
-                                <div class="media-body">
-                                    <p>Olá</p>
-                                    <p>Tudo bem?</p>
-                                    <p>Podemos conversar sobre os materiais da disciplina para a prova?</p>
-                                    <p class="meta"><time datetime="2018">23:58</time></p>
-                                </div>
-                            </div>
-                            <div class="media media-meta-day">Today</div>
-                            <div class="media media-chat media-chat-reverse">
-                                <div class="media-body">
-                                    <p>Olá professora</p>
-                                    <p>Tudo bem e você?</p>
-                                    <p>Podemos sim</p>
-                                    <p class="meta"><time datetime="2018">00:06</time></p>
-                                </div>
-                            </div>
-                            <div class="media media-chat"> <img class="avatar" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
-                                <div class="media-body">
-                                    <p>Tudo bem tbm</p>
-                                    <p>Eu postei os materiais na área da disciplina. Conseguiu acessar? </p>
-                                    <p class="meta"><time datetime="2018">00:07</time></p>
-                                </div>
-                            </div>
-                            <div class="media media-chat media-chat-reverse">
-                                <div class="media-body">
-                                    <p>Consegui sim</p>
-                                    <p>Muito obrigado!!</p>
-                                    <p class="meta"><time datetime="2018">00:09</time></p>
-                                </div>
-                            </div>
+                            
                             
                             <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
                                 <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
