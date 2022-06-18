@@ -74,29 +74,33 @@
         <div class="titulo_pagina">
             <h1>Frequência dos alunos</h1>
         </div>
-
-        <div class="form-group">
-            <label for="">Selecione a data da aula: </label>
-            <input class="form-group col-md-4" type="date" name="" id="">
-        </div>
+        <div class="form-inline">
+          <div class="form-group mb-2">
+            <label for="">Selecione a turma</label>
+          </div>
+          <div class="form-group mx-sm-3 mb-9"></div>
+            <select onchange="base_dados(this.value)" class="form-control" aria-label="Default select example">
+                <option value="0"></option>
+                <option value="1">Turma 01</option>
+                <option value="2">Turma 02</option>
+                <option value="3">Turma 03</option>
+                </select>
+          </div>
+      </div>
 
         <div class="conteudo_principal">
             <table class="table table-bordered table-hover" id="tabela_matricula">
                 <thead>
                   <tr>
+                    <th scope="col-1">Turma</th>
                     <th scope="col-1">Aluno</th>
+                    <th scope="col-1">Disciplina</th>
+                    <th scope="col-1">Data</th>
                     <th scope="col-6">Presente</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr id="row_1" onclick="abrir_modal(this.id)">
-                      <td>Fabrício</th>
-                      <td></td>
-                  </tr>
-                  <tr id="row_2" onclick="abrir_modal(this.id)">
-                    <td>Bruna</th>
-                      <td></td>
-                  </tr>
+                <tbody id="t_body">
+              
                 </tbody>
               </table>
 
