@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="_js/notas.js"></script>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -73,34 +74,42 @@
       <h1>Notas</h1>
   </div>
 
-  <div>
-    <a href="" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConteudoDisciplina">Adicionar nota</a>
-    
+  
+
+  <div class="form-inline">
+
+          
+    <div class="form-group mb-2">
+      <label for="">Selecione a turma</label>
+    </div>
+    <div class="form-group mx-sm-3 mb-9"></div>
+      <select onchange="base_dados(this.value)" class="form-control" aria-label="Default select example">
+          <option value="0"></option>
+          <option value="1">Turma 01</option>
+          <option value="2">Turma 02</option>
+          <option value="3">Turma 03</option>
+          </select>
+    </div>
+
+    <div>
+      <a href="" type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalConteudoDisciplina">Adicionar nota</a>
+      
+    </div>
   </div>
 
   <div class="conteudo_principal">
       <table class="table table-bordered table-hover" id="tabela_matricula">
           <thead>
             <tr>
-              <th scope="col-1">Aluno</th>
+              <th scope="col-1">Turma</th>
+              <th scope="col-6">Aluno</th>
               <th scope="col-6">Disciplina</th>
-              <th scope="col-6">Data da Prova</th>
+              <th scope="col-6">Data da prova</th>
               <th scope="col-6">Nota</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>Fabrício</td>
-              <td>Matemática</td>
-              <td>14/04/2022</td>
-              <td>10/10</td>
-            </tr>
-            <tr>
-              <td>Bruna</td>
-              <td>Matemática</td>
-              <td>14/04/2022</td>
-              <td>9.5/10</td>
-            </tr>
+          <tbody id="t_body">
+            
           </tbody>
         </table>
 
