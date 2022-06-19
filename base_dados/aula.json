@@ -6,7 +6,7 @@
   "professor_id": 81,
   "nome_professor": "Professor Fernando",
   "aluno_id": 1,
-  "aluno_nome": "Aluno 1",
+  "aluno_nome": "Carlos",
   "turma": 1,
   "presenca": true,
   "id": "1"
@@ -18,7 +18,7 @@
   "professor_id": 12,
   "nome_professor": "Professor Eduardo",
   "aluno_id": 2,
-  "aluno_nome": "Aluno 1",
+  "aluno_nome": "Maria",
   "turma": 1,
   "presenca": false,
   "id": "2"
@@ -30,8 +30,8 @@
   "professor_id": 36,
   "nome_professor": "Professora Maria",
   "aluno_id": 1,
-  "aluno_nome": "Aluno 1",
-  "turma": 1,
+  "aluno_nome": "Ruan",
+  "turma": 2,
   "presenca": false,
   "id": "3"
  },
@@ -42,8 +42,8 @@
   "professor_id": 39,
   "nome_professor": "Professora Ana Clara",
   "aluno_id": 2,
-  "aluno_nome": "Aluno 1",
-  "turma": 1,
+  "aluno_nome": "Laís",
+  "turma": 2,
   "presenca": true,
   "id": "4"
  }
