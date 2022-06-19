@@ -22,6 +22,12 @@
   "senha": "senha",
   "tipo_usuario": 4,
   "id": "4"
- }
+ },
+ {
+    "login": "financeiro@gmail.com",
+    "senha": "senha",
+    "tipo_usuario": 5,
+    "id": "5"
+   }
 ]
 }

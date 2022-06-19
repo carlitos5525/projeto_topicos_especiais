@@ -58,7 +58,7 @@ function validar_tipo_usuario(usuarios, index) {
             location.href = "/secretaria/anoletivo.html";
         }
         else if(tipo_usuario == 5){
-            alert("O usuário do tipo financeiro não possui telas, pois sua aplicação será no back-end");
+            location.href = "/financeiro/index.html";
         }
     }
     else{
@@ -78,10 +78,10 @@ function valida_login(jsonOBJ){
     //conferindo se o login e senha preenchidos conferem com o que temos na nossa base de dados
     for(index in usuarios){
         if(username == usuarios[index].login){
-            if(password == usuarios[index].senha)
-            login_is_validated = true;
-            validar_tipo_usuario(usuarios, index);
-
+            if(password == usuarios[index].senha){
+                login_is_validated = true;
+                validar_tipo_usuario(usuarios, index);
+            }
         }
     }
 
