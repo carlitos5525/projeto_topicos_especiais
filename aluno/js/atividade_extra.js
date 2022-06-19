@@ -34,7 +34,7 @@ function populate_atividades(jsonOBJ){
     for(index in atividades_do_usuario){
         atividade = "<tr>" + "<td>" + atividades_do_usuario[index].data + " </td>" + 
         "<td>" + atividades_do_usuario[index].nome_atividade + " </td>" + 
-        "<td>" + atividades_do_usuario[index].professor_id + " </td>";
+        "<td>" + atividades_do_usuario[index].nome_professor + " </td>";
         
         if(atividades_do_usuario[index].presenca == true){
             atividade = atividade + "<td>" + "Sim" + " </td>" + "</tr>";

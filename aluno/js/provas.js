@@ -32,8 +32,8 @@ function populate_provas(jsonOBJ){
     t_body = document.getElementById('t_body');
     for(index in provas_do_usuario){
         prova = "<tr>" + "<td>" + provas_do_usuario[index].data + " </td>" + 
-        "<td>" + provas_do_usuario[index].disciplinaId + " </td>" + 
-        "<td>" + provas_do_usuario[index].professorID + " </td>" + 
+        "<td>" + provas_do_usuario[index].nome_disciplina + " </td>" + 
+        "<td>" + provas_do_usuario[index].nome_professor + " </td>" + 
         "<td>" + provas_do_usuario[index].nota + " </td>" + "</tr>";
         t_body.insertAdjacentHTML('beforeend', prova);
     }

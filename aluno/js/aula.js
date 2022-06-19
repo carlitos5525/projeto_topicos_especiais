@@ -33,8 +33,8 @@ function populate_aulas(jsonOBJ){
 
     for(index in aulas_do_usuario){
         aula = "<tr>" + "<td>" + aulas_do_usuario[index].data + " </td>" + 
-        "<td>" + aulas_do_usuario[index].disciplina_id + " </td>" + 
-        "<td>" + aulas_do_usuario[index].professor_id + " </td>";
+        "<td>" + aulas_do_usuario[index].disciplina_nome + " </td>" + 
+        "<td>" + aulas_do_usuario[index].nome_professor + " </td>";
         
         if(aulas_do_usuario[index].presenca == true){
             aula = aula + "<td>" + "Sim" + " </td>" + "</tr>";

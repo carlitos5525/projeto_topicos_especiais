@@ -11,7 +11,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="base_dados()">
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="titulo_site">
       <a class="navbar-brand" href="#">
@@ -63,7 +63,7 @@
     
     <main>
         <div class="titulo_pagina">
-            <h1>Minhas Matrículas</h1>
+            <h1>Minhas Matrículas - Atividades Extras</h1>
         </div>
 
         <div>
@@ -75,25 +75,13 @@
             <table class="table table-bordered table-hover" id="tabela_matricula">
                 <thead>
                   <tr>
-                    <th scope="col-1">Disciplina</th>
-                    <th scope="col-6">Professor</th>
-                    <th scope="col-6">Data de início</th>
-                    <th scope="col-1">Data de término</th>
+                    <th scope="col-1">Nome da atividade extra</th>
+                    <th scope="col-6">Turno</th>
+                    <th scope="col-6">Turma</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td>Aula de Canto</td>
-                    <td>José</td>
-                    <td>05/04/2022</td>
-                    <td>10/10/2022</td>
-                  </tr>
-                  <tr>
-                    <td>Aula de Pintura</td>
-                    <td>Priscila</td>
-                    <td>07/04/2022</td>
-                    <td>21/10/2022</td>
-                  </tr>
+                <tbody id="t_body">
+                  
                 </tbody>
               </table>
 
@@ -126,14 +114,20 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="exampleFormControlSelect1">Selecione o professor</label>
-                <select class="form-control" id="professor_escolhido">
-                  <option>Priscila</option>
-                  <option>Erick</option>
-                  <option>José</option>
+                <label for="exampleFormControlSelect1">Selecione o turno</label>
+                <select class="form-control" id="turno_escolhido">
+                  <option>Manhã</option>
+                  <option>Tarde</option>
+                  <option>Noite</option>
                 </select>
               </div>
-              
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Selecione a turma</label>
+                <select class="form-control" id="turma_escolhida">
+                  <option>Turma 1</option>
+                  <option>Turma 2</option>
+                </select>
+              </div>
             </form>
           </div>
 

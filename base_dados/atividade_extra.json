@@ -1,34 +1,38 @@
 { "atividades": [
  {
-  "data": "2022-06-06T22:32:25.801Z",
-  "nome_atividade": "nome_atividade 1",
+  "data": "2022-06-06",
+  "nome_atividade": "Aula de Canto",
   "presenca": false,
   "professor_id": 97,
+  "nome_professor": "Professor Eduardo",
   "aluno_id": 1,
   "id": "1"
  },
  {
-  "data": "2022-06-07T06:58:48.379Z",
-  "nome_atividade": "nome_atividade 2",
+  "data": "2022-06-07",
+  "nome_atividade": "Aula de Canto",
   "presenca": false,
   "professor_id": 84,
-  "aluno_id": 21,
+  "nome_professor": "Professor Eduardo",
+  "aluno_id": 2,
   "id": "2"
  },
  {
-  "data": "2022-06-07T00:35:52.186Z",
-  "nome_atividade": "nome_atividade 3",
+  "data": "2022-06-07",
+  "nome_atividade": "Aula de Teatro",
   "presenca": false,
   "professor_id": 17,
-  "aluno_id": 85,
+  "nome_professor": "Professora Ana Clara",
+  "aluno_id": 1,
   "id": "3"
  },
  {
-  "data": "2022-06-06T21:09:12.105Z",
-  "nome_atividade": "nome_atividade 4",
+  "data": "2022-06-06",
+  "nome_atividade": "Aula de Teatro",
   "presenca": true,
   "professor_id": 1,
-  "aluno_id": 42,
+  "nome_professor": "Professora Ana Clara",
+  "aluno_id": 2,
   "id": "4"
  }
 ]
