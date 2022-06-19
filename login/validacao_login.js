@@ -2,6 +2,8 @@ function valida_formulario(){
     username = document.getElementById("username").value;
     password = document.getElementById("password").value;
     var form_is_validated = true;
+    
+    //validando se o formulário se login está preenchido
     if(username == ""){
         alert('Por favor, preencha o campo nome do usuário');
         form_is_validated = false;
@@ -76,6 +78,7 @@ function valida_login(jsonOBJ){
     var login_is_validated = false;
 
     //conferindo se o login e senha preenchidos conferem com o que temos na nossa base de dados
+    //se estiver tudo certo, vamos validar se o tipo de usuário foi preenchido corretamente
     for(index in usuarios){
         if(username == usuarios[index].login){
             if(password == usuarios[index].senha){

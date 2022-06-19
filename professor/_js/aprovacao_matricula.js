@@ -48,14 +48,14 @@ function populate_matriculas_ano_letivo(jsonOBJ){
     
     var matriculas_pendentes = [];
     
-    //filtrando apenas pelas provas do usuario logado
+    //filtrando apenas pelas matriculas que ainda NÃO foram aprovadas
     for(index in matriculas_ano_letivo){
       if(matriculas_ano_letivo[index].status == false){
         matriculas_pendentes.push(matriculas_ano_letivo[index]);
         }
     }
   
-    
+    //mostrando as matrículas pendentes de aprovação
     t_body = document.getElementById('t_body');
     for(index in matriculas_pendentes){
         matricula = '<tr id="' + matriculas_pendentes[index].id + '"' + 'onclick="abrir_modal(this.id)"' + '>' +  

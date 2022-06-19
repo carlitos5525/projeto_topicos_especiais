@@ -23,9 +23,10 @@ function populate_provas(jsonOBJ){
     //salvando a turma selecionada
     var turma_id = localStorage.getItem("turma_id");
     
+    //criando a lista de provas da turma
     var provas_da_turma = [];
 
-    //filtrando apenas pelas matriculas da turma selecionada
+    //filtrando apenas pelas notas da turma selecionada
     for(index in provas){
         if(provas[index].turma == turma_id){
             if(provas[index].realizada == true){

@@ -50,6 +50,7 @@ function populate_aulas(jsonOBJ){
     }
 }
 
+//identificando o aluno do responsável logado
 function base_dados2(){
     var requestURL = '/base_dados/responsavel.json';
 

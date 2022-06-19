@@ -69,7 +69,7 @@ function populate_matriculas(jsonOBJ){
     }
 
     t_body = document.getElementById('t_body');
-
+    //mostrando as matriculas na tela
     for(index in matriculas_do_usuario){
         matricula = "<tr>" + "<td>" + matriculas_do_usuario[index].nome_atividade + " </td>" + 
         "<td>" + matriculas_do_usuario[index].turma_atividade + " </td>" + 

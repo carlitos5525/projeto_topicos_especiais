@@ -1,3 +1,4 @@
+//função que vai abrir os dados do JSON e enviar para a outra função popular as inforções na tabela
 function base_dados(){
     var requestURL = '/base_dados/atividade_extra.json';
 
@@ -20,9 +21,10 @@ function populate_atividades(jsonOBJ){
     //pegando o id do usuario logado
     var id_usuario_logado = localStorage.getItem("id_usuario");
 
+    //criando a lista de atividades do usuário que está logado
     var atividades_do_usuario = [];
     
-    //filtrando apenas pelas provas do usuario logado
+    //filtrando apenas pelas atividades do usuario logado
     for(index in atividades){
         if(atividades[index].aluno_id == id_usuario_logado){
             atividades_do_usuario.push(atividades[index]);
@@ -31,6 +33,7 @@ function populate_atividades(jsonOBJ){
 
     t_body = document.getElementById('t_body');
 
+    //populando as informações na tabela da página
     for(index in atividades_do_usuario){
         atividade = "<tr>" + "<td>" + atividades_do_usuario[index].data + " </td>" + 
         "<td>" + atividades_do_usuario[index].nome_atividade + " </td>" + 

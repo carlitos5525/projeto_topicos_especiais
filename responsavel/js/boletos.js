@@ -25,7 +25,7 @@ function populate_boletos(jsonOBJ){
     
     var boletos_do_aluno = [];
     
-    //filtrando apenas pelas provas do usuario logado
+    //filtrando apenas pelss boletos do aluno do usuário logado
     for(index in boletos){
         if(boletos[index].aluno_id == id_aluno){
             boletos_do_aluno.push(boletos[index]);
@@ -50,6 +50,7 @@ function populate_boletos(jsonOBJ){
     }
 }
 
+//identificando o aluno do responsável logado
 function base_dados2(){
     var requestURL = '/base_dados/responsavel.json';
 

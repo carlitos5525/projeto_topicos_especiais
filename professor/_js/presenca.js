@@ -53,7 +53,7 @@ function populate_presenca(jsonOBJ){
     
     var aulas_da_turma = [];
 
-    //filtrando apenas pelas matriculas da turma selecionada
+    //filtrando apenas pelas aulas da turma selecionada
     for(index in aulas){
         if(aulas[index].turma == turma_id){
             aulas_da_turma.push(aulas[index]);

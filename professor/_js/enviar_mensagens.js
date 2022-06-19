@@ -16,6 +16,7 @@ function enviar_mensagem(){
 function base_dados(id_conversa){
     var requestURL = '/base_dados/mensagens.json';
 
+    //salvando o id da conversa a ser mostrada
     localStorage.setItem("id_conversa", id_conversa);
 
     var request = new XMLHttpRequest();
@@ -35,8 +36,10 @@ function base_dados(id_conversa){
 function populate_mensagens(jsonOBJ){
     var mensagens = jsonOBJ['mensagens'];
 
+    //resgatando o id do usuário que está logado
     id_usuario_logado = localStorage.getItem("id_usuario");
 
+    //resgatando o id da conversa a ser mostrada
     id_conversa = localStorage.getItem("id_conversa");
 
     var mensagens_da_conversa = [];
@@ -50,7 +53,7 @@ function populate_mensagens(jsonOBJ){
 
 
     div_chat = document.getElementById("chat-content");
-
+    //exibindo as mensagens na tela
     div_chat.innerHTML = '';
     for(index in mensagens_da_conversa){
         if(mensagens_da_conversa[index].remetente_id == id_usuario_logado){

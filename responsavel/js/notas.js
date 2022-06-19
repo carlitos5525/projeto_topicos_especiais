@@ -25,7 +25,7 @@ function populate_provas(jsonOBJ){
     
     var provas_do_aluno = [];
     
-    //filtrando apenas pelas provas do usuario logado
+    //filtrando apenas pelas provas realizadas do usuario logado
     for(index in provas){
         if(provas[index].alunoID == id_aluno){
             if(provas[index].realizada == true){
@@ -45,6 +45,7 @@ function populate_provas(jsonOBJ){
     }
 }
 
+//identificando o aluno do responsável logado
 function base_dados2(){
     var requestURL = '/base_dados/responsavel.json';
 

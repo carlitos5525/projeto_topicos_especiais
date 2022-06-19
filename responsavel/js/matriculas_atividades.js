@@ -42,7 +42,7 @@ function populate_matriculas_atividades(jsonOBJ){
         t_body.insertAdjacentHTML('beforeend', matricula_da_atv);
     }
 }
-
+//identificando o aluno do responsável logado
 function base_dados2(){
     var requestURL = '/base_dados/responsavel.json';
 

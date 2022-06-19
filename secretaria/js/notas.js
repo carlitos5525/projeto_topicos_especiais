@@ -25,10 +25,12 @@ function populate_provas(jsonOBJ){
     
     var provas_da_turma = [];
 
-    //filtrando apenas pelas matriculas da turma selecionada
+    //filtrando apenas pelas provas da turma selecionada
     for(index in provas){
         if(provas[index].turma == turma_id){
-            provas_da_turma.push(provas[index]);
+            if(provas[index].realizada == true){
+                provas_da_turma.push(provas[index]);
+            }
           }
     }
 

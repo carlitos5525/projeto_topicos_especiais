@@ -1,6 +1,7 @@
 function base_dados(id_aluno){
     var requestURL = '/base_dados/matricula_atividade_extra.json';
 
+    //salvando o id do aluno a ser buscado
     localStorage.setItem("id_aluno_financeiro", id_aluno);
 
     var request = new XMLHttpRequest();
