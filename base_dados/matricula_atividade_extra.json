@@ -1,6 +1,7 @@
 {"matriculas_atividades" : [
  {
   "aluno_id": 1,
+  "nome_aluno": "Carlos",
   "nome_atividade": "Aula de Canto",
   "turma_atividade": 1,
   "turno": "Manhã",
@@ -8,6 +9,7 @@
  },
  {
   "aluno_id": 1,
+  "nome_aluno": "Carlos",
   "nome_atividade": "Aula de Teatro",
   "turma_atividade": 1,
   "turno": "Manhã",
@@ -15,6 +17,7 @@
  },
  {
   "aluno_id": 1,
+  "nome_aluno": "Carlos",
   "nome_atividade": "Vôlei",
   "turma_atividade": 2,
   "turno": "Tarde",
@@ -22,14 +25,16 @@
  },
  {
   "aluno_id": 2,
-  "nome_atividade": "nome_atividade 4",
+  "nome_aluno": "Eduardo",
+  "nome_atividade": "Vôlei",
   "turma_atividade": 1,
   "turno": "Tarde",
   "id": "4"
  },
  {
   "aluno_id": 2,
-  "nome_atividade": "nome_atividade 5",
+  "nome_aluno": "Eduardo",
+  "nome_atividade": "Futsal",
   "turma_atividade": 1,
   "turno": "Noite",
   "id": "5"

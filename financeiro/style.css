@@ -1,0 +1,83 @@
+#menu_navegacao{
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#menu_navegacao ul li{
+    margin-left: 20px;
+}
+
+.titulo_site{
+    margin-left:25px;
+}
+
+.titulo_pagina{
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+}
+
+main{
+    margin: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.conteudo_principal{
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.linha_disciplinas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.linha_disciplinas a{
+    text-decoration: none;
+    margin: 20px;
+}
+
+.linha_disciplinas a:hover{
+    border: solid 1px black;
+    border-radius: 5px;
+}
+
+.disciplina{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.disciplina img{
+    max-width: 250px;
+    text-align: center;
+}
+
+.titulo_disciplina{
+    text-align: center;
+    margin: 7px;
+    color: black
+}
+
+.bi.bi-file-excel-fill{
+    background-color: white;
+    color: red;
+}
+
+.bi.bi-check-square-fill{
+    background-color: green;
+    color: white;
+}
+
+.titulo_mensagens{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#identificador_area{
+    font-weight: bold;
+}
