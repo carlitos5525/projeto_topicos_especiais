@@ -25,7 +25,9 @@ function populate_provas(jsonOBJ){
     //filtrando apenas pelas provas do usuario logado
     for(index in provas){
         if(provas[index].alunoID == id_usuario_logado){
-            provas_do_usuario.push(provas[index]);
+            if(provas[index].realizada == true){
+                provas_do_usuario.push(provas[index]);
+            }
         }
     }
 

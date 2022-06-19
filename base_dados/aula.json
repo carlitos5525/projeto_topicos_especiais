@@ -1,6 +1,6 @@
 { "aulas" : [
  {
-  "data": "2022-06-06",
+  "data": "06/06/2022",
   "disciplina_id": 78,
   "disciplina_nome": "Matemática",
   "professor_id": 81,
@@ -8,11 +8,11 @@
   "aluno_id": 1,
   "aluno_nome": "Aluno 1",
   "turma": 1,
-  "presenca": false,
+  "presenca": true,
   "id": "1"
  },
  {
-  "data": "2022-06-06",
+  "data": "05/06/2022",
   "disciplina_id": 77,
   "disciplina_nome": "Inglês",
   "professor_id": 12,
@@ -24,7 +24,7 @@
   "id": "2"
  },
  {
-  "data": "2022-06-07",
+  "data": "04/06/2022",
   "disciplina_id": 67,
   "disciplina_nome": "Português",
   "professor_id": 36,
@@ -36,7 +36,7 @@
   "id": "3"
  },
  {
-  "data": "2022-06-07",
+  "data": "03/06/2022",
   "disciplina_id": 21,
   "disciplina_nome": "Ciências",
   "professor_id": 39,
@@ -44,7 +44,7 @@
   "aluno_id": 2,
   "aluno_nome": "Aluno 1",
   "turma": 1,
-  "presenca": false,
+  "presenca": true,
   "id": "4"
  }
 ]

@@ -2,13 +2,13 @@ function matricular(){
     atividade_escolhida = document.getElementById('atividade_escolhida');
     var disciplina = atividade_escolhida.options[atividade_escolhida.selectedIndex].text;
 
-    professor_escolhido = document.getElementById('professor_escolhido');
-    var professor = professor_escolhido.options[professor_escolhido.selectedIndex].text;
+    turno_escolhido = document.getElementById('turno_escolhido');
+    var turno = turno_escolhido.options[turno_escolhido.selectedIndex].text;
 
-    inserirLinhaTabela(disciplina, professor);
+    inserirLinhaTabela(disciplina, turno);
 }
 
-function inserirLinhaTabela(disciplina, professor) {
+function inserirLinhaTabela(disciplina, turno) {
 
     // Captura a referência da tabela com id “minhaTabela”
     var table = document.getElementById("tabela_matricula");
@@ -18,14 +18,14 @@ function inserirLinhaTabela(disciplina, professor) {
     var nova_linha = table.insertRow(quantd_linhas);
 
     coluna_disciplina = nova_linha.insertCell(0);
-    coluna_professor = nova_linha.insertCell(1);
-    coluna_data_inicio = nova_linha.insertCell(2);
-    coluna_data_termino = nova_linha.insertCell(3);
+    coluna_turno = nova_linha.insertCell(1);
+    coluna_turma = nova_linha.insertCell(2);
+    
 
     coluna_disciplina.innerHTML = disciplina;
-    coluna_professor.innerHTML = professor;
-    coluna_data_inicio.innerHTML = '10/02/2022';
-    coluna_data_termino.innerHTML = '27/11/2022';
+    coluna_turno.innerHTML = turno;
+    coluna_turma.innerHTML = '1';
+    
 
     document.getElementById("botao_fechar").click();
     
@@ -42,11 +42,13 @@ function matricular_ano_letivo(){
     turno_escolhido = document.getElementById('turno_escolhido');
     var turno = turno_escolhido.options[turno_escolhido.selectedIndex].text;
 
-    inserirLinhaTabelaAnoLetivo(serie, turno);
+    nome_aluno = document.getElementById('nome_aluno').value;
+
+    inserirLinhaTabelaAnoLetivo(serie, turno, nome_aluno);
     
 }
 
-function inserirLinhaTabelaAnoLetivo(serie, turno){
+function inserirLinhaTabelaAnoLetivo(serie, turno, nome_aluno){
     // Captura a referência da tabela com id “minhaTabela”
     var table = document.getElementById("tabela_ano_letivo");
     // Captura a quantidade de linhas já existentes na tabela
@@ -56,11 +58,13 @@ function inserirLinhaTabelaAnoLetivo(serie, turno){
 
     coluna_ano = nova_linha.insertCell(0);
     coluna_aluno = nova_linha.insertCell(1);
-    coluna_turno = nova_linha.insertCell(2);
-    coluna_serie = nova_linha.insertCell(3);
+    coluna_turma = nova_linha.insertCell(2);
+    coluna_turno = nova_linha.insertCell(3);
+    coluna_serie = nova_linha.insertCell(4);
 
-    coluna_ano.innerHTML = '2022';
-    coluna_aluno.innerHTML = 'Aluno do Responsável';
+    coluna_ano.innerHTML = '2023';
+    coluna_aluno.innerHTML = nome_aluno;
+    coluna_turma.innerHTML = "1"
     coluna_turno.innerHTML = turno;
     coluna_serie.innerHTML = serie;
 

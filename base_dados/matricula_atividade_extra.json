@@ -2,35 +2,35 @@
  {
   "aluno_id": 1,
   "nome_atividade": "Aula de Canto",
-  "turma_atividade": "Turma 1",
+  "turma_atividade": 1,
   "turno": "Manhã",
   "id": "1"
  },
  {
   "aluno_id": 1,
   "nome_atividade": "Aula de Teatro",
-  "turma_atividade": "Turma 1",
+  "turma_atividade": 1,
   "turno": "Manhã",
   "id": "2"
  },
  {
   "aluno_id": 1,
   "nome_atividade": "Vôlei",
-  "turma_atividade": "Turma 2",
+  "turma_atividade": 2,
   "turno": "Tarde",
   "id": "3"
  },
  {
   "aluno_id": 2,
   "nome_atividade": "nome_atividade 4",
-  "turma_atividade": "Turma 1",
+  "turma_atividade": 1,
   "turno": "Tarde",
   "id": "4"
  },
  {
   "aluno_id": 2,
   "nome_atividade": "nome_atividade 5",
-  "turma_atividade": "Turma 1",
+  "turma_atividade": 1,
   "turno": "Noite",
   "id": "5"
  }

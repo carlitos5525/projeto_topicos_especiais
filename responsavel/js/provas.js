@@ -28,15 +28,17 @@ function populate_provas(jsonOBJ){
     //filtrando apenas pelas provas do usuario logado
     for(index in provas){
         if(provas[index].alunoID == id_aluno){
-            provas_do_aluno.push(provas[index]);
+            if(provas[index].realizada == false){
+                provas_do_aluno.push(provas[index]);
+            }
         }
     }
     
     
     t_body = document.getElementById('t_body');
     for(index in provas_do_aluno){
-        prova = "<tr>" + "<td>" + provas_do_aluno[index].disciplinaId + " </td>" + 
-        "<td>" + provas_do_aluno[index].professorID  + " </td>" + 
+        prova = "<tr>" + "<td>" + provas_do_aluno[index].nome_disciplina + " </td>" + 
+        "<td>" + provas_do_aluno[index].nome_professor  + " </td>" + 
         "<td>" + provas_do_aluno[index].data
         + " </td>" + 
          "</tr>";
