@@ -5,6 +5,7 @@
   "nome_atividade": "Aula de Canto",
   "turma_atividade": 1,
   "turno": "Manhã",
+  "valor": 50,
   "id": "1"
  },
  {
@@ -13,6 +14,7 @@
   "nome_atividade": "Aula de Teatro",
   "turma_atividade": 1,
   "turno": "Manhã",
+  "valor": 40,
   "id": "2"
  },
  {
@@ -21,6 +23,7 @@
   "nome_atividade": "Vôlei",
   "turma_atividade": 2,
   "turno": "Tarde",
+  "valor": 35,
   "id": "3"
  },
  {
@@ -29,6 +32,7 @@
   "nome_atividade": "Vôlei",
   "turma_atividade": 1,
   "turno": "Tarde",
+  "valor": 70,
   "id": "4"
  },
  {
@@ -37,6 +41,7 @@
   "nome_atividade": "Futsal",
   "turma_atividade": 1,
   "turno": "Noite",
+  "valor": 65,
   "id": "5"
  }
 ]

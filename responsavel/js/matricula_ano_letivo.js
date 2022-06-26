@@ -37,7 +37,7 @@ function populate_matriculas_ano_letivo(jsonOBJ){
     for(index in matriculas_do_aluno){
         matricula_da_atv = "<tr>" + "<td>" + matriculas_do_aluno[index].ano + " </td>" + 
         "<td>" + matriculas_do_aluno[index].aluno_nome + " </td>" + 
-        "<td>" + matriculas_do_aluno[index].turma + " </td>" + 
+        "<td>" + "Turma " + matriculas_do_aluno[index].turma + " </td>" + 
         "<td>" + matriculas_do_aluno[index].turno + " </td>" + 
         "<td>" + matriculas_do_aluno[index].ano_letivo + " </td>" +  "</tr>";
         t_body.insertAdjacentHTML('beforeend', matricula_da_atv);

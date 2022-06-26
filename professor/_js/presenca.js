@@ -68,7 +68,7 @@ function populate_presenca(jsonOBJ){
 
     //preenchendo a tabela com a turma correta
     for(index in aulas_da_turma){
-        aula = '<tr id="' + aulas_da_turma[index].id + '"' + 'onclick="abrir_modal(this.id)"' + '>' + "<td>" + aulas_da_turma[index].turma + " </td>" +
+        aula = '<tr id="' + aulas_da_turma[index].id + '"' + 'onclick="abrir_modal(this.id)"' + '>' + "<td>" + "Turma " + aulas_da_turma[index].turma + " </td>" +
         "<td>" + aulas_da_turma[index].aluno_nome + " </td>" +  
         "<td>" + aulas_da_turma[index].disciplina_nome + " </td>" + 
         "<td>" + aulas_da_turma[index].data + " </td>";

@@ -42,7 +42,7 @@ function populate_provas(jsonOBJ){
 
     //preenchendo a tabela com a turma correta
     for(index in provas_da_turma){
-        prova = "<tr>" + "<td>" + provas_da_turma[index].turma + " </td>" +
+        prova = "<tr>" + "<td>" + "Turma " + provas_da_turma[index].turma + " </td>" +
         "<td>" + provas_da_turma[index].aluno_nome + " </td>" +  
         "<td>" + provas_da_turma[index].nome_disciplina + " </td>" + 
         "<td>" + provas_da_turma[index].nota + " </td>" + "</tr>";

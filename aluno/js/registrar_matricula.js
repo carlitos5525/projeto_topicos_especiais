@@ -72,7 +72,7 @@ function populate_matriculas(jsonOBJ){
     //mostrando as matriculas na tela
     for(index in matriculas_do_usuario){
         matricula = "<tr>" + "<td>" + matriculas_do_usuario[index].nome_atividade + " </td>" + 
-        "<td>" + matriculas_do_usuario[index].turma_atividade + " </td>" + 
+        "<td>" + "Turma " + matriculas_do_usuario[index].turma_atividade + " </td>" + 
         "<td>" + matriculas_do_usuario[index].turno + " </td>" + "</tr>";
         
         

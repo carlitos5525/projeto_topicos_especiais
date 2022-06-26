@@ -37,7 +37,7 @@ function populate_matriculas_atividades(jsonOBJ){
     for(index in matri_atividades_do_aluno){
         matricula_da_atv = "<tr>" + "<td>" + matri_atividades_do_aluno[index].nome_atividade + " </td>" + 
         "<td>" + matri_atividades_do_aluno[index].turno + " </td>" + 
-        "<td>" + matri_atividades_do_aluno[index].turma_atividade + " </td>" + 
+        "<td>" + "Turma " + matri_atividades_do_aluno[index].turma_atividade + " </td>" + 
          "</tr>";
         t_body.insertAdjacentHTML('beforeend', matricula_da_atv);
     }

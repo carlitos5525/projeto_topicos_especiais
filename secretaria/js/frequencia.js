@@ -41,7 +41,7 @@ function populate_frequencia(jsonOBJ){
 
     //preenchendo a tabela com a turma correta
     for(index in aulas_da_turma){
-        aula = "<tr>" + "<td>" + aulas_da_turma[index].turma + " </td>" +
+        aula = "<tr>" + "<td>" + "Turma " + aulas_da_turma[index].turma + " </td>" +
         "<td>" + aulas_da_turma[index].aluno_nome + " </td>" +  
         "<td>" + aulas_da_turma[index].disciplina_nome + " </td>" + 
         "<td>" + aulas_da_turma[index].data + " </td>";

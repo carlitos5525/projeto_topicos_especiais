@@ -40,9 +40,9 @@ function populate_matriculas(jsonOBJ){
 
     //preenchendo a tabela com a turma correta
     for(index in matriculas_da_turma){
-        matricula = "<tr>" + "<td>" + matriculas_da_turma[index].turma + " </td>" +
+        matricula = "<tr>" + "<td>" + "Turma " + matriculas_da_turma[index].turma + " </td>" +
         "<td>" + matriculas_da_turma[index].aluno_nome + " </td>" +  
-        "<td>" + matriculas_da_turma[index].ano_letivo + " </td>";
+        "<td>" +  matriculas_da_turma[index].ano_letivo + " </td>";
 
         if(matriculas_da_turma[index].status == true){
             matricula = matricula + "<td>" + "Sim" + " </td>" + "</tr>";
